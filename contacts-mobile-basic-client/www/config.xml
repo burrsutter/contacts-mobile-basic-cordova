@@ -4,7 +4,8 @@
 	<name>Contacts Client</name>
 
 	<description>
-		A sample Apache Cordova application that responds to the deviceready
+		A sample Apache Cordova application that responds to the
+		deviceready
 		event.
 	</description>
 
@@ -20,6 +21,17 @@
 
 	<feature name="App">
 		<param name="android-package" value="org.apache.cordova.App" />
+	</feature>
+	<feature name="Console">
+		<param name="ios-package" value="CDVLogger" />
+	</feature>
+	<feature name="Device">
+		<param name="android-package" value="org.apache.cordova.device.Device" />
+		<param name="ios-package" value="CDVDevice" />
+	</feature>
+	<feature name="Contacts">
+		<param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+		<param name="ios-package" value="CDVContacts" />
 	</feature>
 
 </widget>
