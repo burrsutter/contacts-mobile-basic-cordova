@@ -22,7 +22,12 @@ APPMODULE.namespace('APPMODULE.app.buildContactDetail');
 APPMODULE.namespace('APPMODULE.app.restEndpoint');
 
 // APPMODULE.app.restEndpoint = 'rest/members';
-APPMODULE.app.restEndpoint = "http://localhost:8080/contacts-mobile-basic-services/rest/members"
+
+// Testing with CordovaSim, iOS Simulator, Android Emulator
+// APPMODULE.app.restEndpoint = "http://localhost:8080/contacts-mobile-basic-services/rest/members";
+
+// Testing on real device
+APPMODULE.app.restEndpoint = "http://contacts-html5.rhcloud.com/rest/members";
 
 /**
  * It is recommended to bind to this event instead of DOM ready() because this will work regardless of whether 
